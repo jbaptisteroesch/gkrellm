@@ -22,10 +22,10 @@ NAME	=		MyGKrellm
 
 OBJ		=		$(SRC:.cpp=.o)
 
-CXXFLAGS	=	-Wall -Werror -Wextra -g
+CXXFLAGS	=	-Wall -Werror -Wextra
 
 $(NAME):	$(OBJ)
-			@g++ -std=c++11 -o $(NAME) $(OBJ) $(LDFLAGS) $(OFLAGS) -lcurses -lsfml-graphics -lsfml-window -lsfml-system
+			@g++ -std=c++11 -o $(NAME) $(OBJ) $(LDFLAGS) $(OFLAGS) -lcurses
 
 all:		$(NAME)
 
