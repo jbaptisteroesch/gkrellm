@@ -1,5 +1,6 @@
 Gkrellm clone ncurses  project
-2nd year rush jan 22/23/24 2021
+
+Epitech 2nd year rush jan 22/23/24 2021
 
 Usage : ./MyGKrellm (-text)
 
