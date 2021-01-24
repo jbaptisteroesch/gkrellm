@@ -3,7 +3,7 @@
  * File Created: Saturday, 23rd January 2021 1:04:40 am
  * Author: Jean-Baptiste Roesch (jean-baptiste.roesch@epitech.eu)
  * -----
- * Last Modified: Sunday, 24th January 2021 2:50:52 am
+ * Last Modified: Sunday, 24th January 2021 11:29:20 am
  * Modified By: Jean-Baptiste Roesch (jean-baptiste.roesch@epitech.eu)
  * -----
  * Copyright - 2021 Jean-Baptiste Roesch
@@ -157,7 +157,7 @@ void DisplayNcurses::mouse_event(MEVENT event)
         if (event.x == vec[0] && event.y == vec[1]) {
             _sub_win.erase(_sub_win.begin() + i);
             _nbModule--;
-            int x, y = 0;
+            int x = 0; int y = 0;
             for (int i = 0; i < _nbModule; ++i) {
                 if (i < 3) {
                     _sub_win[i]->setWinPos(_sub_win[i]->getWin(), x, y);
